@@ -58,123 +58,47 @@ class InputManager {
         
         
         
-        if currentState == .kor{
-            
-            if getThiredTapKey(keyView) != nil{
-                switch tapCount % 3{
-                case 1 :
-                    if currentState == .kor{
-                        return keyView.keyModel?.main_txt ?? ""
-                    }else{
-                        return ""
+        switch tapCount % 2 {
+        case 1 :
+            if currentState == .letter{
+                let char = keyView.keyModel?.lt_txt ?? ""
+                // If shift is on and it's an alphabetic character, convert to uppercase
+                if isShiftOn && char.count == 1 {
+                    let scalar = char.unicodeScalars.first!
+                    if CharacterSet.lowercaseLetters.contains(scalar) {
+                        return char.uppercased()
                     }
-                    
-                case 2:
-                    if currentState == .kor{
-                        return keyView.keyModel?.lt_txt == "" ? (keyView.keyModel?.main_txt ?? "") == "ㅅ" ? "ㅆ" : keyView.keyModel?.main_txt ?? "" :  keyView.keyModel?.lt_txt ?? ""
-                    }else{
-                        return ""
-                    }
-                case 0:
-                    if currentState == .kor{
-                        return getThiredTapKey(keyView) ?? ""
-                    }else{
-                        return ""
-                    }
-                default:
-                    // 3회 이상은 필요에 따라 확장: 예) tertiaryChar
-                    return ""
                 }
+                return char
+            }else if currentState == .number{
+                return keyView.keyModel?.main_txt == "" ? keyView.keyModel?.lt_txt ?? "" : keyView.keyModel?.main_txt ?? ""
+            }else if currentState == .spetial{
+                return keyView.keyModel?.lt_txt ?? ""
             }else{
-                switch tapCount % 2{
-                case 1 :
-        
-                    if currentState == .kor{
-                        return keyView.keyModel?.main_txt ?? ""
-                    }else{
-                        return ""
-                    }
-                    
-                case 0:
-                    if currentState == .kor{
-                        return keyView.keyModel?.lt_txt == "" ? (keyView.keyModel?.main_txt ?? "") == "ㅅ" ? "ㅆ" : keyView.keyModel?.main_txt ?? "" :  keyView.keyModel?.lt_txt ?? ""
-                    }else{
-                        return ""
-                    }
-                default:
-                    // 3회 이상은 필요에 따라 확장: 예) tertiaryChar
-                    return ""
-                }
-            }
-            
-            
-            switch tapCount % 3{
-            case 1 :
-                if currentState == .kor{
-                    return keyView.keyModel?.main_txt ?? ""
-                }else{
-                    return ""
-                }
-                
-            case 2:
-                if currentState == .kor{
-                    return keyView.keyModel?.lt_txt == "" ? (keyView.keyModel?.main_txt ?? "") == "ㅅ" ? "ㅆ" : keyView.keyModel?.main_txt ?? "" :  keyView.keyModel?.lt_txt ?? ""
-                }else{
-                    return ""
-                }
-            case 0:
-                if currentState == .kor{
-                    return keyView.keyModel?.lt_txt == "" ? (keyView.keyModel?.main_txt ?? "") == "ㅅ" ? "ㅆ" : keyView.keyModel?.main_txt ?? "" :  keyView.keyModel?.lt_txt ?? ""
-                }else{
-                    return ""
-                }
-            default:
-                // 3회 이상은 필요에 따라 확장: 예) tertiaryChar
                 return ""
             }
-        }else{
-            switch tapCount % 2 {
-            case 1 :
-                if currentState == .eng{
-                    let char = keyView.keyModel?.lt_txt ?? ""
-                    // If shift is on and it's an alphabetic character, convert to uppercase
-                    if isShiftOn && char.count == 1 {
-                        let scalar = char.unicodeScalars.first!
-                        if CharacterSet.lowercaseLetters.contains(scalar) {
-                            return char.uppercased()
-                        }
+            
+        case 0:
+            if currentState == .letter{
+                let char = keyView.keyModel?.rb_txt ?? ""
+                // If shift is on and it's an alphabetic character, convert to uppercase
+                if isShiftOn && char.count == 1 {
+                    let scalar = char.unicodeScalars.first!
+                    if CharacterSet.lowercaseLetters.contains(scalar) {
+                        return char.uppercased()
                     }
-                    return char
-                }else if currentState == .number{
-                    return keyView.keyModel?.main_txt == "" ? keyView.keyModel?.lt_txt ?? "" : keyView.keyModel?.main_txt ?? ""
-                }else if currentState == .spetial{
-                    return keyView.keyModel?.lt_txt ?? ""
-                }else{
-                    return ""
                 }
-                
-            case 0:
-                if currentState == .eng{
-                    let char = keyView.keyModel?.rb_txt ?? ""
-                    // If shift is on and it's an alphabetic character, convert to uppercase
-                    if isShiftOn && char.count == 1 {
-                        let scalar = char.unicodeScalars.first!
-                        if CharacterSet.lowercaseLetters.contains(scalar) {
-                            return char.uppercased()
-                        }
-                    }
-                    return char
-                }else if currentState == .number{
-                    return keyView.keyModel?.rb_txt == "" ? keyView.keyModel?.main_txt ?? "" : keyView.keyModel?.rb_txt ?? ""
-                }else if currentState == .spetial{
-                    return keyView.keyModel?.rb_txt == "" ? keyView.keyModel?.lt_txt ?? "" : keyView.keyModel?.rb_txt ?? ""
-                }else{
-                    return ""
-                }
-            default:
-                // 3회 이상은 필요에 따라 확장: 예) tertiaryChar
+                return char
+            }else if currentState == .number{
+                return keyView.keyModel?.rb_txt == "" ? keyView.keyModel?.main_txt ?? "" : keyView.keyModel?.rb_txt ?? ""
+            }else if currentState == .spetial{
+                return keyView.keyModel?.rb_txt == "" ? keyView.keyModel?.lt_txt ?? "" : keyView.keyModel?.rb_txt ?? ""
+            }else{
                 return ""
             }
+        default:
+            // 3회 이상은 필요에 따라 확장: 예) tertiaryChar
+            return ""
         }
         
         
@@ -187,51 +111,13 @@ class InputManager {
         return getSimultaneousKey(keyViews, currLanguage)
     }
     
-    func getThiredTapKey(_ keyView:KeyView) -> String?{
-        
-            if keyView.keyModel?.main_txt == "ㅂ"{
-                return "ㅃ"
-            }
-            
-            if keyView.keyModel?.main_txt == "ㅈ"{
-                return "ㅉ"
-            }
-            
-            if keyView.keyModel?.main_txt == "ㄷ"{
-                return "ㄸ"
-            }
-            
-            if keyView.keyModel?.main_txt == "ㄱ"{
-                return "ㄲ"
-            }
-            
-           /* if keyView.keyModel?.main_txt == "ㅗ"{
-                return "ㅙ"
-            }
-            
-            if keyView.keyModel?.main_txt == "ㅏ"{
-                return "ㅒ"
-            }
-            
-            if keyView.keyModel?.main_txt == "ㅜ"{
-                return "ㅞ"
-            }
-            
-            if keyView.keyModel?.main_txt == "ㅓ"{
-                return "ㅖ"
-            }*/
-            
-            
-        
-        return nil
-    }
     
     /// 특수 기능 키(지우기, 한영, 엔터, 특수문자, 스페이스, 시프트 등)인지 판별하는 함수
     private func isSpecialFunctionKey(_ keyView: KeyView?) -> Bool {
         guard let type = keyView?.keyModel?.keyType else { return false }
         // 필요에 따라 여기에 특수키를 추가하세요
         switch type {
-        case .delete, .onshift, .lockshift, .space, .returen, .kor, .eng, .chn, .number, .spetial:
+        case .delete, .onshift, .lockshift, .space, .returen, .number, .spetial:
             return true
         default:
             return false
@@ -248,126 +134,24 @@ class InputManager {
         
         print("first : \(keyViews[0].keyModel?.main_txt)" )
         print("second : \(keyViews[1].keyModel?.main_txt)" )
-        
-        if currLanguage == .kor{
-            if isKorKeyView(keyViews, "ㅡ"){
-                if isSecondKorKeyView(keyViews, "ㅂ"){
-                    return "ㅃ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅈ"){
-                    return "ㅉ"
-                }
-                if isSecondKorKeyView(keyViews, "ㄷ"){
-                    return "ㄸ"
-                }
-                if isSecondKorKeyView(keyViews, "ㄱ"){
-                    return "ㄲ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅅ"){
-                    return "ㅆ"
-                }
-                
-            }
+        if isEngKeyView(keyViews,"W") || isEngKeyView(keyViews, "O") || isEngKeyView(keyViews, "w") || isEngKeyView(keyViews, "o"){
             
-            if isKorKeyView(keyViews, "ㅣ"){
-                if isSecondKorKeyView(keyViews, "ㅂ"){
-                    return "ㅂ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅈ"){
-                    return "ㅈ"
-                }
-                if isSecondKorKeyView(keyViews, "ㄷ"){
-                    return "ㄷ"
-                }
-                if isSecondKorKeyView(keyViews, "ㄱ"){
-                    return "ㄱ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅅ"){
-                    return "ㅅ"
-                }
-                
-                
-            }
-            
-            if isKorKeyView(keyViews, "ㅎ"){
-                if isSecondKorKeyView(keyViews, "ㅂ"){
-                    return "ㅍ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅈ"){
-                    return "ㅊ"
-                }
-                if isSecondKorKeyView(keyViews, "ㄷ"){
-                    return "ㅌ"
-                }
-                if isSecondKorKeyView(keyViews, "ㄱ"){
-                    return "ㅋ"
-                }
-                
-                
-            }
-            
-            if isKorKeyView(keyViews, "ㅁ"){
-                if isSecondKorKeyView(keyViews, "ㅗ"){
-                    return "ㅛ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅏ"){
-                    return "ㅑ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅜ"){
-                    return "ㅠ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅓ"){
-                    return "ㅕ"
-                }
-               
-                
-            }
-            
-            if isKorShiftView(keyViews,.shift){
-                if isSecondKorKeyView(keyViews, "ㅗ"){
-                    return "ㅙ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅏ"){
-                    return "ㅒ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅜ"){
-                    return "ㅞ"
-                }
-                if isSecondKorKeyView(keyViews, "ㅓ"){
-                    return "ㅖ"
-                }
-            }
-            if (keyViews[0].keyModel?.main_txt ?? "") == "" && (keyViews[1].keyModel?.main_txt ?? "") == ""{
-                return "\(keyViews[0].keyModel?.lt_txt ?? ""),\(keyViews[1].keyModel?.lt_txt ?? "")"
-            }else{
-                return "\(keyViews[0].keyModel?.main_txt ?? ""),\(keyViews[1].keyModel?.main_txt ?? "")"
-            }
-            
+            return keyViews[1].keyModel?.lt_txt
         }
         
-        if currLanguage == .eng{
-            if isEngKeyView(keyViews,"W") || isEngKeyView(keyViews, "O") || isEngKeyView(keyViews, "w") || isEngKeyView(keyViews, "o"){
-                
-                return keyViews[1].keyModel?.lt_txt
-            }
+        if isEngKeyView(keyViews,"A") || isEngKeyView(keyViews, "a") || isEngKeyView(keyViews, "L") || isEngKeyView(keyViews, "l"){
             
-            if isEngKeyView(keyViews,"A") || isEngKeyView(keyViews, "a") || isEngKeyView(keyViews, "L") || isEngKeyView(keyViews, "l"){
-                
-                if keyViews[1].keyModel?.rb_txt == "." || keyViews[1].keyModel?.rb_txt == ""{
-                    return nil
-                }else{
-                    return keyViews[1].keyModel?.rb_txt
-                }
-            }
-            
-            if isEnglishOnly(keyViews[1].keyModel?.lt_txt ?? "") && isEnglishOnly(keyViews[0].keyModel?.lt_txt ?? ""){
-                return keyViews[1].keyModel?.lt_txt
+            if keyViews[1].keyModel?.rb_txt == "." || keyViews[1].keyModel?.rb_txt == ""{
+                return nil
             }else{
-                return "\(keyViews[0].keyModel?.lt_txt ?? ""),\(keyViews[1].keyModel?.lt_txt ?? "")"
+                return keyViews[1].keyModel?.rb_txt
             }
-            
-            
-            
+        }
+        
+        if isEnglishOnly(keyViews[1].keyModel?.lt_txt ?? "") && isEnglishOnly(keyViews[0].keyModel?.lt_txt ?? ""){
+            return keyViews[1].keyModel?.lt_txt
+        }else{
+            return "\(keyViews[0].keyModel?.lt_txt ?? ""),\(keyViews[1].keyModel?.lt_txt ?? "")"
         }
         
         
@@ -379,29 +163,6 @@ class InputManager {
         return text.range(of: pattern, options: .regularExpression) != nil
     }
     
-    func isSecondKorKeyView(_ keyViews:[KeyView],_ value:String) -> Bool{
-        if (keyViews[1].keyModel?.main_txt ?? "") == value{
-            return true
-        }
-        
-        return false
-    }
-    
-    func isKorKeyView(_ keyViews:[KeyView],_ value:String) -> Bool{
-        if (keyViews[0].keyModel?.main_txt ?? "") == value{
-            return true
-        }
-        
-        return false
-    }
-    
-    func isKorShiftView(_ keyViews:[KeyView],_ keyType:KeyType) -> Bool{
-        if keyViews[0].keyModel?.keyType == keyType{
-            return true
-        }
-        
-        return false
-    }
     
     func isEngKeyView(_ keyViews:[KeyView],_ value:String) -> Bool{
         

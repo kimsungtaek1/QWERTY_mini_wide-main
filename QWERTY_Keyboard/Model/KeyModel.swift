@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 enum CurrentLanguage{
-    case kor
     case eng
 }
 
@@ -18,9 +17,6 @@ enum KeyType{
     case letter
     case space
     case delete
-    case kor
-    case eng
-    case chn
     case number
     case spetial
     case shift

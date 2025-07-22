@@ -25,8 +25,7 @@ class KeyboardViewController: UIInputViewController {
     /// 입력창 진입/포커스 변경 시 키보드 상태를 초기화하는 함수
     func resetKeyboardState() {
         keyboardView.currentLanguage = .eng
-        keyboardView.currentState = .eng
-        keyboardView.automata = HangulAutomata()
+        keyboardView.currentState = .letter
         keyboardView.composingLength = 0
         keyboardView.proxy?.unmarkText()
         InputManager.shared.tapCount = 0

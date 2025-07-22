@@ -126,38 +126,6 @@ class KeyLetter{
     
     
     
-    func getKorLetters() -> [[KeyModel]] {
-        
-        return [
-            [KeyModel(keyType: .letter,main_txt: "ㅂ",lt_txt: "ㅍ", main_color: textColor, lt_color: subletter_Color,lt_textsize: korsubTextSize, backgroundColor: backgroundColor, height:key_height, width: key_width,tag: 0),
-             KeyModel(keyType: .letter,main_txt: "ㅈ",lt_txt: "ㅊ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 1),
-             KeyModel(keyType: .letter,main_txt: "ㄷ",lt_txt: "ㅌ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 2),
-             KeyModel(keyType: .letter,main_txt: "ㄱ",lt_txt: "ㅋ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 3),
-             KeyModel(keyType: .letter,main_txt: "ㅅ", main_color: textColor,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 4),
-             KeyModel(keyType: .letter,main_txt: "ㅗ",lt_txt: "ㅛ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 5),
-             KeyModel(keyType: .letter,main_txt: "ㅏ",lt_txt: "ㅑ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 6),
-             KeyModel(keyType: .letter,main_txt: "ㅣ",main_color: textColor, rt_color: subletter_Color,rt_textsize: 10, backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 7),
-             KeyModel(keyType: .delete,main_txt: "⌫", main_color: textColor,backgroundColor: function_bg,selectBackgroundColor: function_bg,height:key_height, width: key_width)],
-            [KeyModel(keyType: .letter,main_txt: "ㅁ", main_color: textColor,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 9),
-             KeyModel(keyType: .letter,main_txt: "ㄴ", main_color: textColor,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 10),
-             KeyModel(keyType: .letter,main_txt: "ㅇ", main_color: textColor,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 11),
-             KeyModel(keyType: .letter,main_txt: "ㄹ", main_color: textColor,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 12),
-             KeyModel(keyType: .letter,main_txt: "ㅎ", main_color: textColor,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 13),
-             KeyModel(keyType: .letter,main_txt: "ㅜ",lt_txt: "ㅠ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 14),
-             KeyModel(keyType: .letter,main_txt: "ㅓ",lt_txt: "ㅕ", main_color: textColor,lt_color: subletter_Color,lt_textsize: korsubTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 15),
-             KeyModel(keyType: .letter,main_txt: "ㅡ", rt_txt: "⠈", main_color: textColor, rt_color: subletter_Color, backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 16),
-             KeyModel(keyType: .eng ,main_txt: "Eng", main_color: textColor,main_textsize: engTextSize, backgroundColor: function_bg,selectBackgroundColor: function_bg,height:key_height, width: key_width)]
-        ]
-    }
-
-    func getKorFunction() -> [KeyModel]{
-        return [
-            KeyModel(keyType: .shift,image: "ic_shift.png",selectImage: "ic_shift_on.png",backgroundColor: function_bg,selectBackgroundColor: .white,height: key_height, width: fuctionwidth),
-            KeyModel(keyType: .number,main_txt: "123",main_color: textColor, main_textsize: return123TextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg,height: key_height, width: fuctionwidth),
-            KeyModel(keyType: .space ,main_txt: "스페이스",main_color: textColor,main_textsize: spaceTextSize, backgroundColor: backgroundColor)
-            ,KeyModel(keyType: .returen,main_txt: "↵",main_color: textColor,main_textsize: return123TextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg,height: key_height, width: fuctionwidth + key_width + 6)
-        ]
-    }
 
     func getEngFunction() -> [KeyModel]{
         return [
@@ -168,31 +136,6 @@ class KeyLetter{
         ]
     }
 
-    func getShiftLetter() -> [[KeyModel]]{
-        return [
-            [KeyModel(keyType: .letter,main_txt: "ㅃ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㅉ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㄸ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㄲ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㅆ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㅙ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㅒ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .letter,main_txt: "ㅣ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-             KeyModel(keyType: .delete,main_txt: "⌫" , main_color: textColor,backgroundColor: function_bg,selectBackgroundColor: function_bg,height:key_height, width: key_width),
-             ],
-            [
-                KeyModel(keyType: .letter,main_txt: "ㅁ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㄴ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㅇ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㄹ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㅎ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㅞ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㅖ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                 KeyModel(keyType: .letter,main_txt: "ㅡ", main_color: textColor, backgroundColor: backgroundColor, height:key_height, width: key_width),
-                KeyModel(keyType: .eng,main_txt: "Eng", main_color: textColor,main_textsize: engTextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg, height:key_height, width: key_width),
-            ]
-        ]
-    }
 
     func getEngLetter() -> [[KeyModel]]{
         return [
@@ -213,7 +156,7 @@ class KeyLetter{
              KeyModel(keyType: .letter,lt_txt: "n",rb_txt: "j", lt_color: textColor, lt_textsize: engSmallTextSize,rb_color: subletter_Color ,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 14),
              KeyModel(keyType: .letter,lt_txt: "m",rb_txt: "k", lt_color: textColor, lt_textsize: engSmallTextSize,rb_color: subletter_Color ,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 15),
              KeyModel(keyType: .letter,lt_txt: "l",rt_txt: "⠈", lt_color: textColor, lt_textsize: engSmallTextSize,rt_color: subletter_Color ,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 16),
-             KeyModel(keyType: .kor ,main_txt: "Kor",main_color: textColor ,main_textsize: engTextSize, backgroundColor: function_bg,selectBackgroundColor: function_bg,height:key_height, width: key_width)]
+             KeyModel(keyType: .space ,main_txt: "Space",main_color: textColor ,main_textsize: engTextSize, backgroundColor: backgroundColor,height:key_height, width: key_width)]
         ]
     }
 
@@ -236,7 +179,7 @@ class KeyLetter{
              KeyModel(keyType: .letter,lt_txt: "N",rb_txt: "J", lt_color: textColor,lt_textsize: engLargeTextSize,rb_color: subletter_Color ,rb_textsize: engLargeTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 13),
              KeyModel(keyType: .letter,lt_txt: "M",rb_txt: "K", lt_color: textColor,lt_textsize: engLargeTextSize,rb_color: subletter_Color ,rb_textsize: engLargeTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 14),
              KeyModel(keyType: .letter,lt_txt: "L",rt_txt: "⠈", lt_color: textColor,lt_textsize: engLargeTextSize,rt_color: subletter_Color ,rb_textsize: engLargeTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width,tag: 15),
-             KeyModel(keyType: .kor ,main_txt: "Kor", main_color: textColor,main_textsize: engTextSize,rb_textsize: engLargeTextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg,height:key_height, width: key_width)]
+             KeyModel(keyType: .space ,main_txt: "Space", main_color: textColor,main_textsize: engTextSize,rb_textsize: engLargeTextSize,backgroundColor: backgroundColor,height:key_height, width: key_width)]
         ]
     }
 
@@ -261,7 +204,6 @@ class KeyLetter{
                 KeyModel(keyType: .letter,lt_txt: "'",rb_txt: "\"", lt_color: textColor,lt_textsize: numerSize, rb_color: textColor,rb_textsize: numerSize, backgroundColor: backgroundColor, height:key_height, width: key_width,tag: 13),
                 KeyModel(keyType: .letter,lt_txt: "-",rb_txt: "_",lt_color: textColor, lt_textsize: numerSize, rb_color: textColor,rb_textsize: numerSize, backgroundColor: backgroundColor, height:key_height, width: key_width,tag: 14),
                  KeyModel(keyType: .letter,main_txt: "9",main_color: textColor,main_textsize: numerSize,backgroundColor: backgroundColor, height:key_height, width: key_width,tag: 15),
-                KeyModel(keyType: currentLanguage == .kor ? .kor : .eng,main_txt: currentLanguage == .kor ? "Kor" : "Eng",main_color: textColor,main_textsize: engTextSize, backgroundColor: function_bg,selectBackgroundColor: function_bg, height:key_height, width: key_width),
             ]
         ]
     }
@@ -269,8 +211,8 @@ class KeyLetter{
     func getNumberFuntion(_ currentLanguage:CurrentLanguage) -> [KeyModel]{
         return [
             KeyModel(keyType: .spetial,main_txt: "#+=",main_color: textColor,main_textsize: return123TextSize,backgroundColor: function_bg,selectBackgroundColor: .white,height: key_height, width: fuctionwidth),
-            KeyModel(keyType: currentLanguage == .kor ? .kor : .eng,main_txt: currentLanguage == .kor ? "ㄱㄴㄷ" : "ABC",main_color: textColor,main_textsize: return123TextSize, backgroundColor: function_bg,selectBackgroundColor: function_bg,height: key_height, width: fuctionwidth),
-            KeyModel(keyType: .space ,main_txt: currentLanguage == .kor ? "스페이스" : "Space",main_color: textColor,main_textsize: spaceTextSize, backgroundColor: backgroundColor)
+            KeyModel(keyType: .space,main_txt: "ABC",main_color: textColor,main_textsize: return123TextSize, backgroundColor: backgroundColor,height: key_height, width: fuctionwidth),
+            KeyModel(keyType: .space ,main_txt: "Space",main_color: textColor,main_textsize: spaceTextSize, backgroundColor: backgroundColor)
             ,KeyModel(keyType: .returen,main_txt: "↵",main_color: textColor,main_textsize: return123TextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg,height: key_height, width: fuctionwidth + key_width + 6)
         ]
     }
@@ -294,15 +236,15 @@ class KeyLetter{
              KeyModel(keyType: .letter,lt_txt: "[",rb_txt: "{",lt_color: textColor,rb_color: textColor, rb_textsize: specialFontSize,backgroundColor: backgroundColor,height:key_height, width: key_width),
              KeyModel(keyType: .letter,lt_txt: "]",rb_txt: "}",lt_color: textColor,rb_color: textColor ,rb_textsize: specialFontSize,backgroundColor: backgroundColor,height:key_height, width: key_width),
              KeyModel(keyType: .letter,lt_txt: "|",rb_txt: "\\",lt_color: textColor,rb_color: textColor ,rb_textsize: specialFontSize,backgroundColor: backgroundColor,height:key_height, width: key_width),
-             KeyModel(keyType: currentLanguage == .kor ? .kor : .eng ,main_txt: currentLanguage == .kor ? "Kor" : "Eng",main_color: textColor,main_textsize: engTextSize, backgroundColor: function_bg,selectBackgroundColor: function_bg,height:key_height, width: key_width)]
+             KeyModel(keyType: .space ,main_txt: "Space",main_color: textColor,main_textsize: engTextSize, backgroundColor: backgroundColor,height:key_height, width: key_width)]
         ]
     }
 
     func getSpectialFuntion(_ currentLanguage:CurrentLanguage) -> [KeyModel]{
         return [
             KeyModel(keyType: .number,main_txt: "123",main_color: textColor,main_textsize: return123TextSize, backgroundColor: function_bg,selectBackgroundColor: .white,height: key_height, width: fuctionwidth),
-            KeyModel(keyType: currentLanguage == .kor ? .kor : .eng,main_txt: currentLanguage == .kor ? "ㄱㄴㄷ" : "ABC",main_color: textColor,main_textsize: return123TextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg,height: key_height, width: fuctionwidth),
-            KeyModel(keyType: .space ,main_txt: currentLanguage == .kor ? "스페이스" : "Space",main_color: textColor,main_textsize: spaceTextSize,backgroundColor: backgroundColor)
+            KeyModel(keyType: .space,main_txt: "ABC",main_color: textColor,main_textsize: return123TextSize,backgroundColor: backgroundColor,height: key_height, width: fuctionwidth),
+            KeyModel(keyType: .space ,main_txt: "Space",main_color: textColor,main_textsize: spaceTextSize,backgroundColor: backgroundColor)
             ,KeyModel(keyType: .returen,main_txt: "↵",main_color: textColor,main_textsize: return123TextSize,backgroundColor: function_bg,selectBackgroundColor: function_bg,height: key_height, width: fuctionwidth + key_width + 6)
         ]
     }
