@@ -117,7 +117,7 @@ class InputManager {
         guard let type = keyView?.keyModel?.keyType else { return false }
         // 필요에 따라 여기에 특수키를 추가하세요
         switch type {
-        case .delete, .onshift, .lockshift, .space, .returen, .number, .spetial:
+        case .delete, .onshift, .lockshift, .space, .returen, .number, .spetial, .abc:
             return true
         default:
             return false

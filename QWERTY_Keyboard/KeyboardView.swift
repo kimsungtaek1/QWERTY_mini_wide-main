@@ -201,10 +201,8 @@ class KeyboardView:UIView{
        
         for keyView in functionStackView.arrangedSubviews{
                 let _keyView = keyView as! KeyView
-            if _keyView.keyModel?.keyType == .returen{
-                _keyView.setSize(KeyLetter.shared.fuctionwidth + KeyLetter.shared.key_width + 6, KeyLetter.shared.key_height)
-            }else if _keyView.keyModel?.keyType == .space{
-                _keyView.setSize(KeyLetter.shared.calculateKeyboardWidth() - KeyLetter.shared.fuctionwidth * 2 + KeyLetter.shared.key_width + 6, KeyLetter.shared.key_height)
+            if _keyView.keyModel?.keyType == .space{
+                _keyView.setSize(KeyLetter.shared.calculateKeyboardWidth() - KeyLetter.shared.fuctionwidth * 4, KeyLetter.shared.key_height)
             }else{
                 _keyView.setSize(KeyLetter.shared.fuctionwidth, KeyLetter.shared.key_height)
             }
@@ -397,6 +395,12 @@ extension Reactive where Base:KeyboardView{
                 changeLetter(KeyLetter.shared.getNumberLetter(.eng))
                 changeFunction(KeyLetter.shared.getNumberFuntion(.eng))
                 break
+            case .abc:
+                commitText()
+                base.currentState = .letter
+                changeLetter(KeyLetter.shared.getEngLetter())
+                changeFunction(KeyLetter.shared.getEngFunction())
+                break
             case .spetial:
                 base.currentState = .spetial
                 changeLetter(KeyLetter.shared.getSpecialLetter(.eng))
@@ -464,6 +468,8 @@ extension Reactive where Base:KeyboardView{
             case .delete:
                 break
             case .number:
+                break
+            case .abc:
                 break
             case .spetial:
                 break

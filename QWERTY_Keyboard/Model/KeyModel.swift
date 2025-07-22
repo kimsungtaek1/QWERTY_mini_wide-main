@@ -23,6 +23,7 @@ enum KeyType{
     case onshift
     case returen
     case lockshift
+    case abc
 }
 
 class KeyModel{
