@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4267B0FF7A5240C125C6E053 /* Pods_QWERTY_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416051ED577F653B531BD333 /* Pods_QWERTY_Keyboard.framework */; };
+		49712092D6AE6FEF14FD5601 /* Pods_QWERTY_Mini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E15BBA274E345DB3B72DA4 /* Pods_QWERTY_Mini.framework */; };
+		B927BE102DC82F4400B742F5 /* QWERTY_Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B927BE092DC82F4400B742F5 /* QWERTY_Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B927BE0E2DC82F4400B742F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B927BD152DC6DBB900B742F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B927BE082DC82F4400B742F5;
+			remoteInfo = QWERTY_Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B927BE152DC82F4400B742F5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B927BE102DC82F4400B742F5 /* QWERTY_Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25BC3DF124C1AC5D1D36E776 /* Pods-QWERTY_Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWERTY_Keyboard.release.xcconfig"; path = "Target Support Files/Pods-QWERTY_Keyboard/Pods-QWERTY_Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		416051ED577F653B531BD333 /* Pods_QWERTY_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QWERTY_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E15BBA274E345DB3B72DA4 /* Pods_QWERTY_Mini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QWERTY_Mini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B927BD1D2DC6DBB900B742F5 /* QWERTY_Mini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWERTY_Mini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B927BE092DC82F4400B742F5 /* QWERTY_Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QWERTY_Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4361300D952664E2BAE32B /* Pods-QWERTY_Mini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWERTY_Mini.release.xcconfig"; path = "Target Support Files/Pods-QWERTY_Mini/Pods-QWERTY_Mini.release.xcconfig"; sourceTree = "<group>"; };
+		EAA05B4FDB0FCB968B5407BA /* Pods-QWERTY_Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWERTY_Keyboard.debug.xcconfig"; path = "Target Support Files/Pods-QWERTY_Keyboard/Pods-QWERTY_Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		F2EE989796A010F0CA9D6F25 /* Pods-QWERTY_Mini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWERTY_Mini.debug.xcconfig"; path = "Target Support Files/Pods-QWERTY_Mini/Pods-QWERTY_Mini.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B927BD2F2DC6DBBA00B742F5 /* Exceptions for "QWERTY_Mini" folder in "QWERTY_Mini" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B927BD1C2DC6DBB900B742F5 /* QWERTY_Mini */;
+		};
+		B927BE142DC82F4400B742F5 /* Exceptions for "QWERTY_Keyboard" folder in "QWERTY_Keyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B927BE082DC82F4400B742F5 /* QWERTY_Keyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B927BD1F2DC6DBB900B742F5 /* QWERTY_Mini */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B927BD2F2DC6DBBA00B742F5 /* Exceptions for "QWERTY_Mini" folder in "QWERTY_Mini" target */,
+			);
+			path = QWERTY_Mini;
+			sourceTree = "<group>";
+		};
+		B927BE0A2DC82F4400B742F5 /* QWERTY_Keyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B927BE142DC82F4400B742F5 /* Exceptions for "QWERTY_Keyboard" folder in "QWERTY_Keyboard" target */,
+			);
+			path = QWERTY_Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B927BD1A2DC6DBB900B742F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49712092D6AE6FEF14FD5601 /* Pods_QWERTY_Mini.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B927BE062DC82F4400B742F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4267B0FF7A5240C125C6E053 /* Pods_QWERTY_Keyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A605988DC1EF14363B7F3954 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE989796A010F0CA9D6F25 /* Pods-QWERTY_Mini.debug.xcconfig */,
+				BB4361300D952664E2BAE32B /* Pods-QWERTY_Mini.release.xcconfig */,
+				EAA05B4FDB0FCB968B5407BA /* Pods-QWERTY_Keyboard.debug.xcconfig */,
+				25BC3DF124C1AC5D1D36E776 /* Pods-QWERTY_Keyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B927BD142DC6DBB900B742F5 = {
+			isa = PBXGroup;
+			children = (
+				B927BD1F2DC6DBB900B742F5 /* QWERTY_Mini */,
+				B927BE0A2DC82F4400B742F5 /* QWERTY_Keyboard */,
+				B927BD1E2DC6DBB900B742F5 /* Products */,
+				A605988DC1EF14363B7F3954 /* Pods */,
+				BC5FC89706126BEE9484D67C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B927BD1E2DC6DBB900B742F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B927BD1D2DC6DBB900B742F5 /* QWERTY_Mini.app */,
+				B927BE092DC82F4400B742F5 /* QWERTY_Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC5FC89706126BEE9484D67C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97E15BBA274E345DB3B72DA4 /* Pods_QWERTY_Mini.framework */,
+				416051ED577F653B531BD333 /* Pods_QWERTY_Keyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B927BD1C2DC6DBB900B742F5 /* QWERTY_Mini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B927BD302DC6DBBA00B742F5 /* Build configuration list for PBXNativeTarget "QWERTY_Mini" */;
+			buildPhases = (
+				EA213B241DB98438019273B5 /* [CP] Check Pods Manifest.lock */,
+				B927BD192DC6DBB900B742F5 /* Sources */,
+				B927BD1A2DC6DBB900B742F5 /* Frameworks */,
+				B927BD1B2DC6DBB900B742F5 /* Resources */,
+				6906CBC0CD8D71FFFD119BAF /* [CP] Embed Pods Frameworks */,
+				B927BE152DC82F4400B742F5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B927BE0F2DC82F4400B742F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B927BD1F2DC6DBB900B742F5 /* QWERTY_Mini */,
+			);
+			name = QWERTY_Mini;
+			productName = QWERTY_Mini;
+			productReference = B927BD1D2DC6DBB900B742F5 /* QWERTY_Mini.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B927BE082DC82F4400B742F5 /* QWERTY_Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B927BE112DC82F4400B742F5 /* Build configuration list for PBXNativeTarget "QWERTY_Keyboard" */;
+			buildPhases = (
+				911A34CEF509E41403952BFA /* [CP] Check Pods Manifest.lock */,
+				B927BE052DC82F4400B742F5 /* Sources */,
+				B927BE062DC82F4400B742F5 /* Frameworks */,
+				B927BE072DC82F4400B742F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B927BE0A2DC82F4400B742F5 /* QWERTY_Keyboard */,
+			);
+			name = QWERTY_Keyboard;
+			productName = QWERTY_Keyboard;
+			productReference = B927BE092DC82F4400B742F5 /* QWERTY_Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B927BD152DC6DBB900B742F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					B927BD1C2DC6DBB900B742F5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					B927BE082DC82F4400B742F5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = B927BD182DC6DBB900B742F5 /* Build configuration list for PBXProject "QWERTY_Mini" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B927BD142DC6DBB900B742F5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B927BD1E2DC6DBB900B742F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B927BD1C2DC6DBB900B742F5 /* QWERTY_Mini */,
+				B927BE082DC82F4400B742F5 /* QWERTY_Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B927BD1B2DC6DBB900B742F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B927BE072DC82F4400B742F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6906CBC0CD8D71FFFD119BAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QWERTY_Mini/Pods-QWERTY_Mini-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QWERTY_Mini/Pods-QWERTY_Mini-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QWERTY_Mini/Pods-QWERTY_Mini-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		911A34CEF509E41403952BFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QWERTY_Keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA213B241DB98438019273B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QWERTY_Mini-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B927BD192DC6DBB900B742F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B927BE052DC82F4400B742F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B927BE0F2DC82F4400B742F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B927BE082DC82F4400B742F5 /* QWERTY_Keyboard */;
+			targetProxy = B927BE0E2DC82F4400B742F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B927BD312DC6DBBA00B742F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EE989796A010F0CA9D6F25 /* Pods-QWERTY_Mini.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QWERTY_Mini/QWERTY_Mini.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B83MV36PP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWERTY_Mini/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.35;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qwerty-mini.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B927BD322DC6DBBA00B742F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4361300D952664E2BAE32B /* Pods-QWERTY_Mini.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QWERTY_Mini/QWERTY_Mini.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B83MV36PP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWERTY_Mini/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.35;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qwerty-mini.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B927BD332DC6DBBA00B742F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B927BD342DC6DBBA00B742F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B927BE122DC82F4400B742F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA05B4FDB0FCB968B5407BA /* Pods-QWERTY_Keyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QWERTY_Keyboard/QWERTY_Keyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B83MV36PP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWERTY_Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QWERTY_Keyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qwerty-mini.app.QWERTY-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B927BE132DC82F4400B742F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BC3DF124C1AC5D1D36E776 /* Pods-QWERTY_Keyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QWERTY_Keyboard/QWERTY_Keyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B83MV36PP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWERTY_Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QWERTY_Keyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qwerty-mini.app.QWERTY-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B927BD182DC6DBB900B742F5 /* Build configuration list for PBXProject "QWERTY_Mini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B927BD332DC6DBBA00B742F5 /* Debug */,
+				B927BD342DC6DBBA00B742F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B927BD302DC6DBBA00B742F5 /* Build configuration list for PBXNativeTarget "QWERTY_Mini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B927BD312DC6DBBA00B742F5 /* Debug */,
+				B927BD322DC6DBBA00B742F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B927BE112DC82F4400B742F5 /* Build configuration list for PBXNativeTarget "QWERTY_Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B927BE122DC82F4400B742F5 /* Debug */,
+				B927BE132DC82F4400B742F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B927BD152DC6DBB900B742F5 /* Project object */;
+}

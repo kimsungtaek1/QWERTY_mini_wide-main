@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-QWERTY_Mini/Pods-QWERTY_Mini-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/Solar-dev/Solar.framework
+${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework
